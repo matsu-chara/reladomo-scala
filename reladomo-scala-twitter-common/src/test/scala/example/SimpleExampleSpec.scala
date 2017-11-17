@@ -28,6 +28,7 @@ class SimpleExampleSpec extends FlatSpec with Matchers {
     ConnectionPool.add('people, "jdbc:h2:mem:people;MODE=MySQL", "user", "pass")
     implicit val session = NamedAutoSession('people)
     sql"""
+drop table PERSON if exists;
 create table PERSON
 (
     PERSON_ID int not null,
