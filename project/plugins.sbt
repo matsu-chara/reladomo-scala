@@ -7,5 +7,6 @@ addSbtPlugin("com.timushev.sbt"  % "sbt-updates"     % "0.3.1")
 addSbtPlugin("net.virtual-void"  % "sbt-dependency-graph" % "0.8.2")
 addSbtPlugin("com.jsuereth"      % "sbt-pgp"         % "1.1.0-M1")
 addSbtPlugin("org.xerial.sbt"    % "sbt-sonatype"    % "2.0")
+addSbtPlugin("com.github.scalaprops" % "sbt-scalaprops" % "0.2.3")
 
 scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature")

@@ -52,6 +52,10 @@ lazy val reladomoScalaTwitterCommon = (project in file("reladomo-scala-twitter-c
       scalaTest
     )
   )
+  .settings(
+    scalapropsWithScalazlaws,
+    scalapropsVersion := "0.5.2"
+  )
   .dependsOn(reladomoScalaCommon)
   .settings(MimaSettings.mimaSettings)
 
